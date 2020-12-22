@@ -11,6 +11,7 @@ import (
 
 // errNotImplemented is a sentinel which indicates package watchdog does not
 // support this OS.
+//
 var errNotImplemented = fmt.Errorf("watchdog: not implemented on %s: %w", runtime.GOOS, os.ErrNotExist)
 
 func open() (*Device, error)                    { return nil, errNotImplemented }
